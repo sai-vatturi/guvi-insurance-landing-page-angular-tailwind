@@ -1,1 +1,32 @@
-<p>whyus works!</p>
+<div class="w-full max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-12 items-center bg-[#F8F8F8] my-12 pt-24">
+	<!-- Left Side - Image -->
+	<div class="w-full md:w-2/3 lg:w-1/2 relative">
+		<img src="assets/whyus/choose-us-img.jpg" alt="Happy family moment" class="w-full rounded-lg shadow-lg" />
+		<!-- Decorative Leaf -->
+		<div class="absolute -top-8 right-8 w-16 h-16">
+			<img src="assets/hero/shape-3.png" alt="" class="w-full h-full object-contain" />
+		</div>
+	</div>
+
+	<!-- Right Side - Content -->
+	<div class="w-full lg:w-1/2">
+		<!-- Header -->
+		<div class="mb-8">
+			<p class="text-emerald-600 text-sm uppercase tracking-wide my-2">WHY CHOOSE US</p>
+			<h2 class="text-darkBlue text-4xl mx-auto font-redhat font-bold my-4">Our Company Has Been Working Very Faithfully</h2>
+			<p class="text-gray font-light py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed placerat elementum. Urna eu et purus et mi sit rhoncus. Id nisi quis arcu nulla leo.</p>
+		</div>
+
+		<!-- Features Grid -->
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+			<div *ngFor="let feature of features" class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-[rgba(17,17,26,0.1)_0px_0px_8px] font-light text-md text-gray font-redhat">
+				<span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-primary">
+					<svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</span>
+				<span class="text-gray-700 font-medium">{{ feature.title }}</span>
+			</div>
+		</div>
+	</div>
+</div>
