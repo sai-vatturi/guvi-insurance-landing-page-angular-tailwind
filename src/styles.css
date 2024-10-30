@@ -1,10 +1,12 @@
+@import "assets/css/flaticon.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: "keepcalm";
-  src: url("assets/fonts/KeepCalm-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "keepcalm";
+	src: url("assets/fonts/KeepCalm-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
