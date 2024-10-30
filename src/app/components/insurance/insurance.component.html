@@ -1,1 +1,49 @@
-<p>insurance works!</p>
+<!-- insurance.component.html -->
+<div class="w-full max-w-7xl mx-auto px-4 py-8 mt-10">
+	<!-- Header -->
+	<div class="text-center mb-12">
+		<p class="text-emerald-600 text-sm uppercase tracking-wide mb-2">INSURANCE SERVICES</p>
+		<h1 class="text-darkBlue text-3xl lg:text-[40px] lg:w-[55%] lg:leading-[50px] mx-auto font-redhat font-bold mt-2 mb-20">Take The Worry Out Of Life With Insurance Protection</h1>
+	</div>
+
+	<!-- Carousel Container -->
+	<div class="relative">
+		<!-- Scroll Container -->
+		<div #scrollContainer class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
+			<!-- Cards -->
+			<div *ngFor="let image of images; let i = index" class="min-w-[300px] md:min-w-[350px] flex-shrink-0 snap-start">
+				<div class="relative rounded-lg overflow-hidden group">
+					<img [src]="'assets/insurance/' + image" [alt]="'Insurance service ' + (i + 1)" class="w-full h-[320px] md:[350px] object-cover" />
+					<div class="absolute bottom-9 left-9 right-9 p-6 bg-primary/70 rounded-sm">
+						<div class="flex items-center gap-2 text-white/80 text-sm mb-2">
+							<span>INSURANCE</span>
+							<span class="w-1.5 h-1.5 rounded-full bg-white/80"></span>
+							<span>{{ getCategory(i) }}</span>
+						</div>
+						<h3 class="text-white text-xl font-keepcalm font-light">{{ getTitle(i) }}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation Arrows -->
+		<button (click)="scrollPrev()" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-gray-800 focus:outline-none hover:bg-gray-50 transition-colors">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+			</svg>
+		</button>
+		<button (click)="scrollNext()" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-gray-800 focus:outline-none hover:bg-gray-50 transition-colors">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+			</svg>
+		</button>
+	</div>
+
+	<!-- Bottom Text -->
+	<div class="text-center mt-8 text-gray sm:w-[70%] lg:w-[50%] mx-auto">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed placerat elementum. Urna eu et purus et mi sit rhoncus
+			<a href="#" class="text-emerald-600 hover:text-emerald-700">View All</a>
+		</p>
+	</div>
+</div>
