@@ -2,7 +2,7 @@
 	<div class="w-full md:px-12 mx-auto px-4 py-16 flex flex-col lg:flex-row gap-12 items-center my-12 pt-24">
 		<!-- Left Side - Image -->
 		<div class="w-full md:w-2/3 lg:w-1/2 relative">
-			<img src="assets/whyus/choose-us-img.jpg" alt="Happy family moment" class="w-full rounded-lg shadow-lg" />
+			<img src="assets/whyus/choose-us-img.jpg" alt="Happy family moment" class="w-full rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105" />
 			<!-- Decorative Leaf -->
 			<div class="absolute -top-8 right-8 w-16 h-16">
 				<img src="assets/hero/shape-3.png" alt="" class="w-full h-full object-contain" />
@@ -20,8 +20,8 @@
 
 			<!-- Features Grid -->
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-				<div *ngFor="let feature of features" class="flex items-center gap-2 p-4 bg-white rounded-lg shadow-[rgba(17,17,26,0.1)_0px_0px_8px] font-light text-md text-gray font-redhat">
-					<span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-primary">
+				<div *ngFor="let feature of features" class="flex items-center gap-2 py-2 pl-4 bg-white rounded-lg shadow-[rgba(17,17,26,0.1)_0px_0px_8px] font-light text-md text-gray font-redhat transform transition-transform duration-300 hover:scale-105 hover:bg-emerald-100">
+					<span class="flex-shrink-0 w-6 h-6 mt-2 flex items-center justify-center text-primary">
 						<i class="ri-check-double-line w-8 h-8"></i>
 					</span>
 					<span class="text-gray-700 font-normal">{{ feature.title }}</span>

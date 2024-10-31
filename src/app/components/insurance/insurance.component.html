@@ -12,7 +12,7 @@
 		<div #scrollContainer class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
 			<!-- Cards -->
 			<div *ngFor="let image of images; let i = index" class="min-w-[300px] md:min-w-[350px] flex-shrink-0 snap-start">
-				<div class="relative rounded-lg overflow-hidden group">
+				<div class="relative rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105 mt-4">
 					<img [src]="'assets/insurance/' + image" [alt]="'Insurance service ' + (i + 1)" class="w-full h-[320px] md:[350px] object-cover" />
 					<div class="absolute bottom-9 left-9 right-9 p-6 bg-primary/70 rounded-sm">
 						<div class="flex items-center gap-2 text-white/80 text-sm mb-2">
