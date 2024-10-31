@@ -14,7 +14,8 @@ module.exports = {
 				darkGray: '#213337', // Dark Gray
 				gray: '#616161', // Medium Gray
 				lightGreen: '#F3F9F8', // Light Green
-				teal: '#497774' // Teal
+				teal: '#497774', // Teal
+				greenBg: '#EAF3F2' // Green Background
 			},
 			screens: {
 				'custom-lg': '1147px' // Custom breakpoint at 1147px
